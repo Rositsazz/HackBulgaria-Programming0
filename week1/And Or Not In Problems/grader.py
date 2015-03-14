@@ -1,5 +1,6 @@
 points = input('Test points: ')
 points = int(points)
+
 min_points = 0
 max_points = 100
 
