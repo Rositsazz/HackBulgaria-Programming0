@@ -1,9 +1,11 @@
 number = input("Enter a number:")
 number= int(number)
 
+i = 1
+suma = 0
 
-i = 1 
 while i<=number:
-    print(i)
-    i+=2
+    suma += i
+    i+=1
 
+print("The sum is:",suma)
