@@ -1,6 +1,8 @@
-import random
-number = input ('Enter sides:')
-print ('The dice rolled:\n')
-a =random.random()
+from random import randint
 
-print(a*int(number)//1)
+number = input ('Enter sides:')
+number = int(number)
+
+print ('The dice rolled:')
+rolled =randint(1,number)
+print(rolled)
