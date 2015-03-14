@@ -1,17 +1,15 @@
-number = input("Enter number: ")
-number = int(number)
-string = ""
-v = number
-counter = 0
-while number != 0:
+n = input("Enter number: ")
+n = int(n)
 
-    string+=str(number%10)
-    number = number//10
-    counter = counter +1
-print(string)
+new_integer = 0
+old_integer = n
 
+while n>0 :
+    digit = n%10
+    new_integer = new_integer*10 + digit
+    n = n//10
 
-if v == int(string):
+if new_integer==old_integer:
     print("Palindrom")
-else :
-    print("Not")
+else:
+    print("Not Palindrom")
