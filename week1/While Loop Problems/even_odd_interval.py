@@ -4,18 +4,19 @@ a = int(a)
 b = int(b)
 
 if a <= b :
-    counter = a
-    while counter <= b :
-        if counter%2==0 :
-            print(counter , "- even")
+    number = a
+    while number <= b :
+        if number%2==0 :
+            print(number , "- even")
         else :
-            print(counter , "- odd")
-        counter = counter + 1
-elif a >= b : 
-    counter = b
-    while counter <= a :
-        if counter%2==0 :
-            print(counter , "- even")
+            print(number , "- odd")
+        number += 1
+
+elif a > b :
+    number = b
+    while number <= a :
+        if number%2==0 :
+            print(number , "- even")
         else :
-            print(counter , "- odd")
-        counter = counter + 1
+            print(number , "- odd")
+        number += 1
