@@ -5,16 +5,18 @@ m = n/2
 i = 1
 array = []
 suma = 0
+
 while i<=m :
     if n%i==0 :
-        array = array + [i]
+        array += [i]
 
     i+=1
 
 print(array)
+
 j = 0
 while j < len(array):
-    suma=suma + array[j]
+    suma += array[j]
     j+=1
 
 print(suma)
