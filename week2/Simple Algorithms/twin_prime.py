@@ -17,20 +17,29 @@ def is_prime_number (n):
 
 
 if is_prime_number(number)==True :
-    
-    if is_prime_number(number+2)==True and is_prime_number(number-2)==True :
+    num2 = number + 2
+    num1 = number - 2
+    if is_prime_number(num2)==True and is_prime_number(num1)==True :
+
         print("Twin primes with " + str(number) + ":")
-        print(number-2,number)
-        print(number,number+2)
-    elif is_prime_number(number+2)==False and is_prime_number(number-2)==False :
+        print(num1,number)
+        print(number,num2)
+
+    elif is_prime_number(num2)==False and is_prime_number(num1)==False :
+
         print(str(number) + " is prime but:")
-        print(str(number-2)+" and " + str(number+2)+ " are not " )
-    elif is_prime_number(number+2)==False and is_prime_number(number-2)==True :
+        print(str(num1)+" and " + str(num2)+ " are not " )
+
+    elif is_prime_number(num2)==False and is_prime_number(num1)==True :
+
         print(str(number) + " is prime but:")
-        print(str(number-2)+"is not and " + str(number+2)+ " is " )
-    elif is_prime_number(number+2)==True and is_prime_number(number-2)==False :
+        print(str(num1)+"is not and " + str(num2)+ " is " )
+
+    elif is_prime_number(num2)==True and is_prime_number(num1)==False :
+
         print(str(number) + " is prime but:")
-        print(str(number+2)+"is not and " + str(number-2)+ " is " )
-        
+        print(str(num2)+"is not and " + str(num1)+ " is " )
+
 else :
+
     print(str(number)+ " is not prime")
