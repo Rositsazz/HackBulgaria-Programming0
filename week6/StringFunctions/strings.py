@@ -20,9 +20,8 @@ def join(delimiter, items):
 
 def startswith(search,string) :
     new_string = string[:len(search)]
-    if new_string==search:
-        return True
-    return False
+    return new_string==search
+
 
 def endswith(search, string) :
     new_string = string[len(string)-len(search):]
