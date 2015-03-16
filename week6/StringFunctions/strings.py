@@ -1,13 +1,22 @@
 def str_reverse(string) :
     new_string = string[::-1]
     return new_string
+    
+    
+def join(delimiter, items):
+    result = ""
+    last_index = len(items) - 1
+    index = 0
 
-def join(delimiter, items) :
-    new_string = ""
     for item in items:
-        new_string += item+delimiter
-    new_string = new_string[:len(new_string)]
-    return new_string
+        if index == last_index: 
+            result += item 
+        else : 
+            result += item +delimiter
+
+    return result
+    
+    
 
 def startswith(search,string) :
     new_string = string[:len(search)]
