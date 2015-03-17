@@ -2,7 +2,7 @@ def row_string(string):
     result = []
 
     for ch in string:
-        result = result + [ch]
+        result += [ch]
 
     return result
 
@@ -17,14 +17,12 @@ def string_matrix(number_strings, strings) :
     for row in matrix:
         while len(row)>number_strings:
             del row[-1]
-            #row = row[:-1]
+
         if len(row)<number_strings:
             while number_strings>len(row):
                 row.append("X")
 
     return matrix
-
-#print(string_matrix(3,["pyth","gogo"]))
 
 
 
@@ -34,7 +32,6 @@ def board_to_string(board) :
 
     for row in board:
         print("|", " | ".join(row),"|")
-
 
 
 board_to_string(board)
